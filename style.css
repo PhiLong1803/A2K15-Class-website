@@ -82,10 +82,17 @@ body::before {
   display: block;
 }
 
+.nav-item a:hover {
+  color: rgb(0, 255, 55);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   min-width: 160px;
   list-style: none;
   padding: 0;
@@ -98,14 +105,15 @@ body::before {
 
 .dropdown-content li a:hover {
   background-color: #555;
+  color: yellow;
 }
 
 a {
   text-decoration: none;
   color: aliceblue;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
+
 .content {
   width: 100%;
   height: 100%;
@@ -122,19 +130,23 @@ a {
 
 figcaption {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 7.5px 0;
 }
 
 td {
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   text-align: center;
+  padding: 7.5px 0;
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   max-width: 100%;
@@ -145,7 +157,7 @@ td {
   width: 100%;
   display: flex;
   gap: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow-x: auto;
   overflow: visible !important;
   position: relative;
@@ -153,9 +165,9 @@ td {
 
 .card-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-right: 20px;
-  width: 100%;
+  width: auto;
 }
 
 .card {
@@ -178,11 +190,12 @@ td {
 
 .caption {
   background-color: #ffffff;
-  font-size: 11px;
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 4px 5px;
+  padding: 6px 5px;
   margin: 0%;
   text-align: center;
+  font-weight: bold;
 }
 
 .the-thanh-vien {
@@ -313,3 +326,4 @@ td {
   text-align: center;
   margin-right: 10px;
 }
+

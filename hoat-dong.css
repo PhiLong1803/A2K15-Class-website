@@ -25,6 +25,10 @@
   background-color: #45a049; /* Đổi màu đậm hơn một chút */
 }
 
+.nut-hoat-dong:active {
+  background-color: rgb(0, 123, 0);
+}
+
 .nut-hoat-dong-container {
   display: flex;
   flex-wrap: wrap;
@@ -38,6 +42,7 @@
   padding: 10px 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  font-size: 20px;
 }
 
 hr {
@@ -53,6 +58,7 @@ hr {
 @media (max-width: 600px) {
   .nut-hoat-dong {
     width: calc(50% - 15px); /* 2 nút 1 dòng trên điện thoại */
+    font-size: 14px;
   }
 }
 
@@ -136,6 +142,14 @@ body::before {
   display: block;
 }
 
+.nav-item a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -179,8 +193,9 @@ a {
 .Cntct {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2px 10px;
+  padding: 15px 10px;
   margin-top: 2px;
+  font-size: 24px;
 }
 
 .information {
@@ -202,6 +217,8 @@ a {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  padding: 10px 25px;
+  font-size: 16px;
 }
 
 .information p {
@@ -215,4 +232,34 @@ a {
   width: 30px;
   text-align: center;
   margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 25px;
+  }
+
+  .slogan {
+    font-size: 12px;
+  }
+
+  .navigation_menu {
+    padding: 5px 0;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .lop {
+    font-size: 16px;
+  }
+
+  .Cntct {
+    font-size: 20px;
+  }
+
+  .information {
+    font-size: 14px;
+  }
 }

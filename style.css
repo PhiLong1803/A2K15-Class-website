@@ -130,13 +130,13 @@ a {
 
 figcaption {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding: 7.5px 0;
 }
 
 td {
-  font-size: 18px;
+  font-size: 13.75px;
   color: white;
   text-align: center;
   padding: 7.5px 0;
@@ -145,8 +145,8 @@ td {
 .main {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   max-width: 100%;
@@ -157,7 +157,7 @@ td {
   width: 100%;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow-x: auto;
   overflow: visible !important;
   position: relative;
@@ -165,14 +165,13 @@ td {
 
 .card-container {
   display: flex;
-  justify-content: center;
-  padding-right: 20px;
+  justify-content: flex-end;
   width: auto;
 }
 
 .card {
   width: fit-content;
-  max-width: 250px;
+  max-width: 200px;
   background-color: #ffffff;
   border-radius: 5px;
   padding: 10px;
@@ -190,7 +189,7 @@ td {
 
 .caption {
   background-color: #ffffff;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 6px 5px;
   margin: 0%;
@@ -289,8 +288,9 @@ td {
 .Cntct {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2px 10px;
+  padding: 15px 10px;
   margin-top: 2px;
+  font-size: 24px;
 }
 
 .information {
@@ -312,6 +312,8 @@ td {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  padding: 10px 25px;
+  font-size: 16px;
 }
 
 .information p {
@@ -327,3 +329,57 @@ td {
   margin-right: 10px;
 }
 
+@media (max-width: 600px) {
+  .name {
+    font-size: 25px;
+  }
+
+  .slogan {
+    font-size: 12px;
+  }
+
+  .navigation_menu {
+    padding: 5px 0;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  td {
+    font-size: 15px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .sodo {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Cntct {
+    font-size: 20px;
+  }
+
+  .information {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width:1024px) {
+  .main {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

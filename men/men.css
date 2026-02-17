@@ -394,7 +394,7 @@ hr {
   .lightbox-content {
     max-width: 300px;
     max-height: 80%;
-    margin-top: 30%;
+    margin-top: 35%;
   }
 
   #lightbox-caption {
@@ -405,6 +405,7 @@ hr {
     color: #ccc;
     padding: 5px 0;
     font-size: 16px;
+    margin-top: 2%;
   }
 }
 
@@ -412,7 +413,7 @@ hr {
   .lightbox-content {
     max-width: 600px;
     max-height: 65%;
-    margin-top: 11.5%;
+    margin-top: 4%;
   }
 
   #lightbox-caption {
@@ -423,5 +424,6 @@ hr {
     color: #ccc;
     padding: 5px 0;
     font-size: 18px;
+    margin-top: 2%;
   }
 }

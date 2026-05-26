@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.region {
+  border-style: hidden;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background: rgb(255, 33, 92);
+  box-sizing: border-box;
+  padding: 20px 0;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px 15px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.slogan {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2px 15px;
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navigation_menu {
+  width: 100%;
+  padding: 15px 0;
+  background: rgb(252, 173, 26);
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.nav-item a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.nav-item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+  list-style: none;
+  padding: 0;
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.full {
+  border: 2px solid orange;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.thong-tin {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.thong-tin h3 {
+  text-align: center;
+}
+.full img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  justify-items: right;
+}
+.footer {
+  width: 100%;
+  padding: 2px 15px;
+  border-style: hidden;
+  background: rgb(255, 33, 92);
+}
+
+.Cntct {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 10px;
+  margin-top: 2px;
+  font-size: 24px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  right: 30px;
+  bottom: 20px;
+  color: white;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+.information p {
+  display: flex;
+  align-items: center; /* Căn icon và chữ nằm ngang nhau */
+  margin: 5px 0;
+}
+
+#iconfa {
+  /* 2. Cố định độ rộng cho icon để phần chữ phía sau thẳng hàng */
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 25px;
+  }
+
+  .slogan {
+    font-size: 9px;
+  }
+
+  .navigation_menu {
+    padding: 5px 0;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .lop {
+    font-size: 16px;
+  }
+
+  .Cntct {
+    font-size: 20px;
+  }
+
+  .information {
+    font-size: 14px;
+  }
+
+  .full {
+    flex-direction: column;
+  }
+}

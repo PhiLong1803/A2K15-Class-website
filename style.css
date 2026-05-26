@@ -272,7 +272,6 @@ td {
 .recap {
   display: flex;
   width: fit-content;
-  height: 280px;
   margin: 10px auto;
   border-style: double;
   border-color: orange;
@@ -331,6 +330,11 @@ td {
   margin-right: 10px;
 }
 
+iframe {
+  width: 345px;
+  height: 195px;
+}
+
 @media (max-width: 600px) {
   .name {
     font-size: 25px;
@@ -378,8 +382,9 @@ td {
     font-size: 14px;
   }
 
-  .recap {
-    height: 160px;
+  iframe {
+    width: 215px;
+    height: 125px;
   }
 }
 

@@ -377,6 +377,10 @@ td {
   .information {
     font-size: 14px;
   }
+
+  .recap {
+    height: 160px;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
